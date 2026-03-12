@@ -6,10 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Csecontroller {
-	@GetMapping("/add")
-	public int cseadd(@RequestParam int a, @RequestParam int b) {
-	return a+b;
-}
+
+	    @GetMapping("/add")
+	    public int cseadd(@RequestParam int a, @RequestParam int b) {
+	        return a+b;
+	    }
+
+	    @GetMapping("/mul")
+	    public int csemul(@RequestParam int a, @RequestParam int b) {
+	        return a*b;
+	    }
 }
 
 
